@@ -5,13 +5,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MyString1 {
+	private String palabra;
 	
-	public static void main(String[] args) {
-		System.out.println(contarFrecuenciaPalabras("hola hola"));
-		System.out.println(contarPalabras("     adios     a    "));
-	}
+	
+	
 
-// Método para contar el número de palabras en una cadena
+	public MyString1(String palabra) {
+			super();
+			this.palabra = palabra;
+		}
+
+	// Método para contar el número de palabras en una cadena
 	public static int contarPalabras(String str) {
 		if (str == null || str.isEmpty()) {
 			return 0;
